@@ -25,7 +25,7 @@ $ npm start
 ```
 You can access the frontend React application `http://localhost:3000/`.
 
-![My Image](/images/react-app.png)
+![React UI](images/react-app.png)
 
 ## REST APIs
 The Spring Boot applications defines following APIs.
