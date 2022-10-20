@@ -16,14 +16,14 @@ To build the package as a single artifact by running the `./mvnw clean install`.
 
 To start the Spring Boot application using Maven:
 ```bash
-$ cd stochasticmodel
-$  ../mvnw spring-boot:run
+$ cd stochastic-models
+$  ./mvnw spring-boot:run
 ```
 
 You can access the application at `http://localhost:8080`.
 #### Running the frontend:
 ```
-$ cd stochasticmodel/ui
+$ cd stochastic-models/ui
 $ npm start
 ```
 You can access the frontend React application `http://localhost:3000/`.
