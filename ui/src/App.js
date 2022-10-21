@@ -47,7 +47,11 @@ function App() {
 	        <div class="container">
 	            <div class="intro">
 	                <h2 class="text-center">Markov Chain Text Generator</h2>
-	                <p class="text-center">A simple tool for text generation using a Markov chain. Enter the prefix, suffix, word count and upload a .txt file to generate text.</p>
+	                <p class="text-center">
+		                A simple tool for text generation using Markov chains. 
+		                The prefix word count, and the suffix word count is used for training the data set. 
+		                Choose a .txt file to upload and the tool generates random text based on the text uploaded.
+	                </p>
 	            </div>
 	            <form class="form-inline" onSubmit={submitForm}>
 	                <div class="form-group">
