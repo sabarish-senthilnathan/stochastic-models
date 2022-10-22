@@ -51,4 +51,12 @@ The GIF below shows the working of the React application.
 
 ![Demo UI](images/demo.gif)
 
+## Assumptions
+* The prefix and suffix parameters indicate number of words that constitute the prefix and suffix, respectively.
+* Support for only .txt files.
 
+## Improvements
+* Better handling of edge cases for the markov chain algorithm generating text.
+* Create more comprehensive test suites.
+* Improve UI to be more user friendly, intuitive, and responsive.
+* Add token-based authentication to the REST endpoints.
