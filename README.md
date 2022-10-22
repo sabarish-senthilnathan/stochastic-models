@@ -14,12 +14,17 @@ This Spring Boot project merged with a React application allows users to generat
 ## Running the Full Application
 #### Running the backend:
 
-To build the package as a single artifact by running the `./mvnw clean install`. 
+To build the package as a single artifact by running the `./mvnw clean install` on Unix systems and `mvnw.cmd clean install` for Windows. 
 
 To start the Spring Boot application using Maven:
 ```bash
 $ cd stochastic-models
 $  ./mvnw spring-boot:run
+```
+
+For Windows:
+```
+mvnw.cmd spring-boot:run
 ```
 
 You can access the application at `http://localhost:8080`.
