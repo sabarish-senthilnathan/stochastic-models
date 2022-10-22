@@ -12,7 +12,7 @@ import com.company.stochasticmodel.exception.MarkovChainTextGenerationException;
 
 @Component
 public class MarkovChainHandler {
-	private Map<String, List<String>> trainDataset(String input, int prefix, int suffix) {
+	public Map<String, List<String>> trainDataset(String input, int prefix, int suffix) {
 		String[] words = input.split("[\\s]+");
 		Map<String, List<String>> modelMap = new HashMap<>();
 

@@ -1,6 +1,7 @@
 package com.company.stochasticmodel.controller;
 
 import org.apache.commons.io.FilenameUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,15 +19,15 @@ import com.company.stochasticmodel.service.MarkovChainService;
 @CrossOrigin
 @RequestMapping("/v1/api/markov")
 public class MarkovChainController {
-	private MarkovChainService markowChainService;
+	@Autowired
+	private MarkovChainService markovChainService;
 	
-	public MarkovChainController(MarkovChainService markowChainService) {
-		this.markowChainService = markowChainService;
+	public MarkovChainController(MarkovChainService markovChainService) {
+		this.markovChainService = markovChainService;
 	}
 	
 	/**
 	 * Returns a String object representing random text generated using Markov chains. 
-	 *s
 	 * 
 	 * @param file      a .txt file containing some text
 	 * @param prefix    the length of words to be used as prefix
@@ -50,7 +51,7 @@ public class MarkovChainController {
 			try {
 				byte[] bytes = file.getBytes();
 				String fileData = new String(bytes);
-				generatedText  = markowChainService.generateText(fileData, prefix, suffix, wordCount);
+				generatedText  = markovChainService.generateText(fileData, prefix, suffix, wordCount);
 			} catch (Exception ex) {
 				throw new MarkovChainTextGenerationException("Error generating text using markov chain."); 
 			}

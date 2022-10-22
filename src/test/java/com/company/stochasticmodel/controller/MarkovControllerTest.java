@@ -1,4 +1,4 @@
-package com.company.stochasticmodel;
+package com.company.stochasticmodel.controller;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -21,7 +21,6 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.company.stochasticmodel.controller.MarkovChainController;
 import com.company.stochasticmodel.exception.FileNotSupportedException;
 import com.company.stochasticmodel.exception.MarkovChainTextGenerationException;
 import com.company.stochasticmodel.service.MarkovChainService;
