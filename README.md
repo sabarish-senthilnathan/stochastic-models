@@ -42,6 +42,8 @@ The Spring Boot applications defines following APIs.
 curl -X POST -F 'wordCount=50' -F 'prefix=1' -F 'suffix=1' -F 'file=@/path/to/file.txt' http://localhost:8080/v1/api/markov/text-generation
 ```
 
+The GIF below shows the working of the React application.
+
 ![Demo UI](images/demo.gif)
 
 
