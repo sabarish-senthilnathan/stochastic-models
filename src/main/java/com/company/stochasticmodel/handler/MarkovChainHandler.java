@@ -18,22 +18,22 @@ public class MarkovChainHandler {
 
 		for (int i = 0; i < words.length - prefix; i = i + prefix) {
 			List<String> word = new LinkedList<String>();
-			int j = 0;
-			int k = i;
+			int prefixCount = 0;
+			int curr = i;
 			
-			while(j < prefix) {
-				word.add(words[k]);
-				k++;
-				j++;
+			while(prefixCount < prefix) {
+				word.add(words[curr]);
+				curr++;
+				prefixCount++;
 			}
 			
 			String key = String.join(" ", word);
 			List<String> value = new LinkedList<String>();
-			int l = 0;
+			int suffixCount = 0;
 			
-			while(l < suffix) {
-				value.add(words[(k - 1) + 1 + l]);
-				l++;
+			while(suffixCount < suffix) {
+				value.add(words[(curr - 1) + 1 + suffixCount]);
+				suffixCount++;
 			}
 			
 			if (modelMap.containsKey(key)) {
